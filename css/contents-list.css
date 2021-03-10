@@ -1,0 +1,187 @@
+.maintitle {
+    display: inline-block;
+    text-align: left;
+
+    position: absolute;
+    left: 50px;
+    top: 0px;
+}
+
+.maintitle h1 {
+    font-size: 60px;
+    font-family: "ＭＳ ゴシック",sans-serif; 
+}
+
+.subtitle {
+    text-align: left;
+
+    position: absolute;
+    top: 100px;
+    left: 160px;
+
+}
+
+.subtitle ol {
+    font-size: 36px;
+}
+
+.subtitle a{
+    font-size: 36px;
+    color: blue;
+    text-decoration: none;
+}
+
+
+/*subtitle -> animation - RSlidein*/
+.subtitle li:nth-child(1) {
+    animation-name: RSlideIn;
+    animation-duration: .5s;
+    animation-timing-function: ease-out;
+    animation-delay: .6s;
+    animation-fill-mode: backwards;
+}
+.subtitle li:nth-child(2) {
+    animation-name: RSlideIn;
+    animation-duration: .5s;
+    animation-timing-function: ease-out;
+    animation-delay: .7s;
+    animation-fill-mode: backwards;
+}
+.subtitle li:nth-child(3) {
+    animation-name: RSlideIn;
+    animation-duration: .5s;
+    animation-timing-function: ease-out;
+    animation-delay: .8s;
+    animation-fill-mode: backwards;
+}
+.subtitle li:nth-child(4) {
+    animation-name: RSlideIn;
+    animation-duration: .5s;
+    animation-timing-function: ease-out;
+    animation-delay: .9s;
+    animation-fill-mode: backwards;
+}
+.subtitle li:nth-child(5) {
+    animation-name: RSlideIn;
+    animation-duration: .5s;
+    animation-timing-function: ease-out;
+    animation-delay: 1s;
+    animation-fill-mode: backwards;
+}
+.subtitle li:nth-child(6) {
+    animation-name: RSlideIn;
+    animation-duration: .5s;
+    animation-timing-function: ease-out;
+    animation-delay: 1.1s;
+    animation-fill-mode: backwards;
+}
+.subtitle li:nth-child(7) {
+    animation-name: RSlideIn;
+    animation-duration: .5s;
+    animation-timing-function: ease-out;
+    animation-delay: 1.2s;
+    animation-fill-mode: backwards;
+}
+.subtitle li:nth-child(8) {
+    animation-name: RSlideIn;
+    animation-duration: .5s;
+    animation-timing-function: ease-out;
+    animation-delay: 1.3s;
+    animation-fill-mode: backwards;
+}
+.subtitle li:nth-child(9) {
+    animation-name: RSlideIn;
+    animation-duration: .5s;
+    animation-timing-function: ease-out;
+    animation-delay: 1.4s;
+    animation-fill-mode: backwards;
+}
+.subtitle li:nth-child(10) {
+    animation-name: RSlideIn;
+    animation-duration: .5s;
+    animation-timing-function: ease-out;
+    animation-delay: 1.5s;
+    animation-fill-mode: backwards;
+}
+.subtitle li:nth-child(11) {
+    animation-name: RSlideIn;
+    animation-duration: .5s;
+    animation-timing-function: ease-out;
+    animation-delay: 1.6s;
+    animation-fill-mode: backwards;
+}
+
+/*image*/
+.image1 {
+    width: 160px;
+    position: absolute;
+    right: 600px;
+    top: 200px;
+}
+.image2 {
+    width: 150px;
+    position: absolute;
+    right: 400px;
+    top: 200px;
+}
+.image3 {
+    width: 150px;
+    position: absolute;
+    right: 200px;
+    top: 200px;
+}
+
+/*button*/
+.btnNext {
+    position: absolute;
+    color: #fff;
+    background-color: #eb6100;
+    border-bottom: 5px solid #b84c00;
+    margin-top: 20px;
+    padding: 12px 0;
+    width: 140px;
+    bottom: 20px;
+    right: 20px;
+
+    /*animation*/
+    animation-name: fadeIn;
+    animation-duration: .6s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-fill-mode: both;
+}
+
+.btnNext a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    transition: color .5s;
+}
+
+.btnNext a:link a:visited {
+    color: white;
+}
+
+.btnNext a:hover {
+    color: black;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes RSlideIn {
+    0% {
+        opacity: 0;
+        transform: translateX(200px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

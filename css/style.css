@@ -1,0 +1,49 @@
+.canvas {
+    width: 95%;
+    height: 870px;
+   /* background-color: #c2ffc2; */
+    /*中央揃え*/
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+
+/*     border: 4px solid black; */
+    border: 4px solid white;
+    text-align: center;
+    position: relative;
+}
+
+body {
+    animation-name: fadeIn;
+    animation-duration: 1.5s;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+}
+
+body::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:#fff;  /* 背景カラー */
+    z-index: 9999;  /* 一番手前に */
+    pointer-events: none;  /* 他の要素にアクセス可能にするためにポインターイベントは無効に */
+    opacity: 0;  /* 初期値 : 透過状態 */
+    -webkit-transition: opacity .8s ease;  /* アニメーション時間は 0.8秒 */
+    transition: opacity .8s ease;
+}
+
+body.fadeout::after {
+    opacity: 1;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

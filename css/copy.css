@@ -1,0 +1,56 @@
+.maintitle {
+    display: inline-block;
+    text-align: center;
+    /*中央揃え*/
+    margin: auto;
+    margin-top: 400px;
+    transform: translateY(-50%);
+}
+
+.maintitle h1 {
+    font-size: 100px;
+    font-family: "ＭＳ ゴシック",sans-serif; 
+}
+
+.btnNext {
+    position: absolute;
+    color: #fff;
+    background-color: #eb6100;
+    border-bottom: 5px solid #b84c00;
+    margin-top: 20px;
+    padding: 12px 0;
+    width: 140px;
+    bottom: 20px;
+    right: 20px;
+
+    /*animation*/
+    animation-name: fadeIn;
+    animation-duration: .6s;
+    animation-timing-function: linear;
+    animation-delay: .5s;
+    animation-fill-mode: both;
+}
+
+.btnNext a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    transition: color .5s;
+}
+
+.btnNext a:link a:visited {
+    color: white;
+}
+
+.btnNext a:hover {
+    color: black;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
