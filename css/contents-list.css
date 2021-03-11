@@ -113,22 +113,10 @@
 
 /*image*/
 .image1 {
-    width: 160px;
+    width: 700px;
     position: absolute;
-    right: 600px;
-    top: 200px;
-}
-.image2 {
-    width: 150px;
-    position: absolute;
-    right: 400px;
-    top: 200px;
-}
-.image3 {
-    width: 150px;
-    position: absolute;
-    right: 200px;
-    top: 200px;
+    left: 960px;
+    top: 160px;
 }
 
 /*button*/

@@ -18,7 +18,7 @@
 
     position: absolute;
     left: 130px;
-    top: 150px;
+    top: 210px;
 
     /*animation*/
     animation-name: fadeIn;
@@ -57,7 +57,7 @@
 
     position: absolute;
     left: 46%;
-    top: 170px;
+    top: 240px;
 
     animation-name: fadeIn;
     animation-duration: .6s;
@@ -73,7 +73,7 @@
 
     position: absolute;
     left: 60%;
-    top: 120px;
+    top: 170px;
 
     /*animation*/
     animation-name: fadeIn;
